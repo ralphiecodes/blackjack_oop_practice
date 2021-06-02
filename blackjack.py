@@ -94,9 +94,9 @@ def hit_or_stand(deck, hand):
 
     player_input = input('Would you like to hit or stand? enter h or s ')
     while playing:
-        if player_input.lower() == 'h':
+        if player_input[0].lower() == 'h':
             hit(deck,hand)
-        elif player_input.lower() == 's':
+        elif player_input[0].lower() == 's':
             playing = False
         else:
             print('Try again ')
