@@ -57,7 +57,7 @@ class Hand:
 
     def adjust_for_ace(self):
         while self.value > 21 and self.aces:
-            self.value -= 11
+            self.value -= 10
             self.aces -= 1
 
 class Chips:
